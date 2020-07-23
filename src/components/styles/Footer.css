@@ -1,0 +1,8 @@
+.footerCopyRight {
+  /* background-color: rgba(23, 38, 50, 1); */
+  background-color: var(--main-color);
+  text-align: center;
+  font-size: 12px;
+  padding: 5px 0;
+  color: white;
+}

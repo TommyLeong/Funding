@@ -1,0 +1,45 @@
+.headerContainer {
+  background-color: white;
+  display: flex;
+  padding: 10px 5%;
+  align-items: center;
+  box-shadow: 0 1px 0 rgba(12, 13, 14, 0.15);
+}
+
+.headerCcontainerRow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logoSize {
+  height: 50px;
+  width: 90px;
+}
+
+.headerMenu ul {
+  display: flex;
+}
+
+.headerMenu a {
+  padding: 10px;
+  display: block;
+}
+
+.headerMenu li a:hover {
+  background-color: var(--main-color);
+  color: white;
+  border-radius: 100px;
+}
+
+@media (max-width: 700px) {
+  .headerLogoSpace {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+  }
+
+  .headerMenu {
+    display: none;
+  }
+}

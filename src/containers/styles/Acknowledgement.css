@@ -1,0 +1,46 @@
+.acknowledgementContainer {
+}
+
+.ackContainerTitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ackContainerMsg {
+  text-align: center;
+  padding: 10px 25px;
+  font-size: 12px;
+}
+
+.ackContainerReceipt {
+  /* background-color: blue; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 25px;
+  color: black;
+}
+
+.ackContainerReceiptBody {
+  width: 250px;
+  border: 0.5px solid black;
+  padding: 15px;
+}
+
+.ackContainerReceiptTitle {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.ackContainerReceiptKey {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.ackContainerReceiptValue {
+  text-align: right;
+  font-size: 12px;
+}

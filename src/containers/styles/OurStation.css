@@ -1,0 +1,36 @@
+.ourstationDashboard {
+  background-color: rgba(252, 251, 252, 1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ourstationDashboardContent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.ourstationDashboard_SortFilterContainer {
+  display: flex;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  margin: 0px 5px;
+  padding: 0px 10px;
+}
+.ourstationDashboard_Filter {
+  display: flex;
+  font-size: 12px;
+  font-weight: bold;
+  justify-content: flex-start;
+  align-items: center;
+  flex: 1;
+}
+.ourstationDashboard_Sort {
+  display: flex;
+  font-size: 12px;
+  font-weight: bold;
+  justify-content: flex-end;
+  align-items: center;
+  flex: 1;
+}
