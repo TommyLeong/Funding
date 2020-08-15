@@ -15,23 +15,7 @@ const Payment = (props) => {
   let animBox = useRef(null);
   const ackId = uuidv4();
 
-  // The following method is use to update Static Mock Response
-  const updateMockResponse = () => {
-    let newStaticAllStops = [];
-    let staticAllStops = localStorage.getItem("staticAllStops");
-    let parsedValue = JSON.parse(staticAllStops);
-    if (staticAllStops) {
-      parsedValue.data.map((item) => {
-        if (item.stationName === station) {
-          item.collectedAmount =
-            item.collectedAmount + parseInt(donationAmount, 10);
-        }
-        newStaticAllStops.push(item);
-      });
-      parsedValue.data = newStaticAllStops;
-      localStorage.setItem("staticAllStops", JSON.stringify(parsedValue));
     }
-  };
 
   useEffect(() => {
     Lottie.loadAnimation({
@@ -55,8 +39,6 @@ const Payment = (props) => {
         data
       );
 
-      updateMockResponse();
-      response = JSON.parse(localStorage.getItem("staticAllStops"));
 
       if (response.status === 200) {
         // Set timeout to simulate waiting response
