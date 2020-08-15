@@ -11,7 +11,10 @@ const getAllStops = () => {
 
     let response = await ApiManager.getAPI("http://localhost:1337/getallstops");
 
-    if (response.status === 200) {
+    if (response === null) {
+      dispatch({ type: GET_ALL_STOPS_FAIL, payload: response });
+      return;
+    } else if (response.status === 200) {
       dispatch({
         type: GET_ALL_STOPS_SUCCESS,
         payload: response,
