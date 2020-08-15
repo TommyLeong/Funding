@@ -14,7 +14,7 @@ import images from "react-payment-inputs/images";
 const Donation = () => {
   const history = useHistory();
   const location = useLocation();
-  const { collectedAmount, busStation } = location.state;
+  const { collectedAmount, busStation, id } = location.state;
 
   const [state, setState] = useState({
     name: "",
@@ -301,6 +301,8 @@ const Donation = () => {
                     donatorName: state.name,
                     donationAmount: state.donationAmount,
                     email: state.email,
+                    id,
+                    collectedAmount,
                   },
                 });
               }

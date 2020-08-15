@@ -31,7 +31,11 @@ const StationProgress = (props) => {
           : {}
       }
       onClick={() => {
-        props.callbackAction(props.stationName, props.collectedAmount);
+        props.callbackAction(
+          props.stationName,
+          props.collectedAmount,
+          props.id
+        );
       }}
     >
       <div className="stationProgressTitleIcon">

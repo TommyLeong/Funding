@@ -77,11 +77,11 @@ const OurStation = (props) => {
     }
   }, [allStops]);
 
-  const navigateToDonation = (station, collectedAmount) => {
+  const navigateToDonation = (station, collectedAmount, id) => {
     history.push({
       pathname: UrlPath.donation.replace(":stationName", station),
       // search: `?station=${station}`,
-      state: { collectedAmount, busStation: station },
+      state: { collectedAmount, busStation: station, id },
     });
   };
 
@@ -89,6 +89,7 @@ const OurStation = (props) => {
     return stations.map((station, index) => (
       <StationProgress
         key={index}
+        id={station.id}
         stationName={station.stationName}
         collectedAmount={station.collectedAmount}
         callbackAction={navigateToDonation}
